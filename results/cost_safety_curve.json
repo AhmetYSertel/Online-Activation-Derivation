@@ -1,0 +1,141 @@
+{
+  "model": "gpt-5.5",
+  "n": 1500,
+  "seed": 1,
+  "sweep": [
+    {
+      "junk_frac": 0.0,
+      "baseline": {
+        "llm_rate": 3.6,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 0,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      },
+      "fixed": {
+        "llm_rate": 3.6,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 0,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    },
+    {
+      "junk_frac": 0.05,
+      "baseline": {
+        "llm_rate": 12.13,
+        "silent_rate": 1.8,
+        "silent_failures": 27,
+        "abstain_genuine_boundary": 52,
+        "abstain_over_cautious": 130,
+        "over_cautious_rate": 8.67
+      },
+      "fixed": {
+        "llm_rate": 8.87,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 79,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    },
+    {
+      "junk_frac": 0.1,
+      "baseline": {
+        "llm_rate": 13.67,
+        "silent_rate": 3.73,
+        "silent_failures": 56,
+        "abstain_genuine_boundary": 78,
+        "abstain_over_cautious": 127,
+        "over_cautious_rate": 8.47
+      },
+      "fixed": {
+        "llm_rate": 12.53,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 134,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    },
+    {
+      "junk_frac": 0.15,
+      "baseline": {
+        "llm_rate": 11.4,
+        "silent_rate": 7.27,
+        "silent_failures": 109,
+        "abstain_genuine_boundary": 121,
+        "abstain_over_cautious": 50,
+        "over_cautious_rate": 3.33
+      },
+      "fixed": {
+        "llm_rate": 18.93,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 230,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    },
+    {
+      "junk_frac": 0.25,
+      "baseline": {
+        "llm_rate": 14.07,
+        "silent_rate": 12.2,
+        "silent_failures": 183,
+        "abstain_genuine_boundary": 163,
+        "abstain_over_cautious": 48,
+        "over_cautious_rate": 3.2
+      },
+      "fixed": {
+        "llm_rate": 26.67,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 346,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    },
+    {
+      "junk_frac": 0.4,
+      "baseline": {
+        "llm_rate": 43.53,
+        "silent_rate": 14.2,
+        "silent_failures": 213,
+        "abstain_genuine_boundary": 367,
+        "abstain_over_cautious": 286,
+        "over_cautious_rate": 19.07
+      },
+      "fixed": {
+        "llm_rate": 42.27,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 580,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    },
+    {
+      "junk_frac": 0.6,
+      "baseline": {
+        "llm_rate": 52.47,
+        "silent_rate": 20.2,
+        "silent_failures": 303,
+        "abstain_genuine_boundary": 584,
+        "abstain_over_cautious": 203,
+        "over_cautious_rate": 13.53
+      },
+      "fixed": {
+        "llm_rate": 62.73,
+        "silent_rate": 0.0,
+        "silent_failures": 0,
+        "abstain_genuine_boundary": 887,
+        "abstain_over_cautious": 54,
+        "over_cautious_rate": 3.6
+      }
+    }
+  ],
+  "figure": "C:\\Users\\Ahmet\\Desktop\\oad_full\\results\\figs\\real_teacher\\cost_safety_curve.png"
+}

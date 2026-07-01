@@ -1,0 +1,41 @@
+{
+  "model": "gpt-5.5",
+  "n": 1500,
+  "seed": 1,
+  "baseline_teacher_backed_confirm": {
+    "llm_rate": 11.4,
+    "accuracy": 91.7,
+    "acted": 1329,
+    "acted_correct": 1220,
+    "abstained": 171,
+    "silent_failures": 109,
+    "silent_inherited_a": 109,
+    "silent_oad_added_b": 0,
+    "weather_acts": 384,
+    "weather_abstain": 6
+  },
+  "exec_grounded_confirm": {
+    "llm_rate": 14.3,
+    "accuracy": 91.7,
+    "acted": 1286,
+    "acted_correct": 1189,
+    "abstained": 214,
+    "silent_failures": 97,
+    "silent_inherited_a": 97,
+    "silent_oad_added_b": 0,
+    "weather_acts": 384,
+    "weather_abstain": 6
+  },
+  "exec_grounded_confirm_plus_gated_induction": {
+    "llm_rate": 18.9,
+    "accuracy": 91.7,
+    "acted": 1216,
+    "acted_correct": 1216,
+    "abstained": 284,
+    "silent_failures": 0,
+    "silent_inherited_a": 0,
+    "silent_oad_added_b": 0,
+    "weather_acts": 381,
+    "weather_abstain": 9
+  }
+}

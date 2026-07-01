@@ -1,0 +1,31 @@
+{
+  "model": "gpt-5.5",
+  "n": 1500,
+  "seed": 1,
+  "acted": 1329,
+  "acted_correct": 1220,
+  "abstained": 171,
+  "silent_failures_total": 109,
+  "silent_inherited_a": 109,
+  "silent_oad_added_b": 0,
+  "abstain_wrong_count": 16,
+  "inherited_by_tool": {
+    "get_weather": 45,
+    "get_calendar": 20,
+    "lookup_contact": 21,
+    "smart_home": 14,
+    "create_reminder": 9
+  },
+  "oad_added_by_tool": {},
+  "inherited_unique_inputs": [
+    "weather in 1945",
+    "show my calendar for 2026",
+    "weather in istanbul please cancel",
+    "look up contact 99problems",
+    "open the 12",
+    "remind me to do a b c d e",
+    "weather in nineteen forty five",
+    "weather forecast for istanbul"
+  ],
+  "oad_added_unique_examples": []
+}

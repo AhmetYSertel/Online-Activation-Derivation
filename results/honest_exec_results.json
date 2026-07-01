@@ -1,0 +1,139 @@
+{
+  "model": "gpt-5.5",
+  "n": 1500,
+  "junk_frac": 0.15,
+  "seed": 1,
+  "executor_calibration": {
+    "n_unique": 51,
+    "agreement_pct": 82.4,
+    "confirms_wrong_action_fp": 3,
+    "rejects_correct_action_fn": 6,
+    "fp_examples": [
+      {
+        "input": "remind me to do a b c d e",
+        "action": {
+          "tool": "create_reminder",
+          "params": {
+            "text": "do a b c d e"
+          }
+        }
+      },
+      {
+        "input": "weather forecast for istanbul",
+        "action": {
+          "tool": "get_weather",
+          "params": {
+            "city": "istanbul"
+          }
+        }
+      },
+      {
+        "input": "weather in istanbul please cancel",
+        "action": {
+          "tool": "get_weather",
+          "params": {
+            "city": "istanbul"
+          }
+        }
+      }
+    ]
+  },
+  "rows": {
+    "baseline_teacher_backed": {
+      "llm_rate": 11.4,
+      "accuracy": 91.7,
+      "acted": 1329,
+      "acted_correct": 1220,
+      "abstained": 171,
+      "silent_failures": 109,
+      "silent_inherited_a": 109,
+      "silent_oad_added_b": 0,
+      "weather_acts": 384,
+      "weather_abstain": 6,
+      "silent_unique_inputs": {
+        "weather in 1945": 11,
+        "show my calendar for 2026": 20,
+        "weather in istanbul please cancel": 14,
+        "look up contact 99problems": 21,
+        "open the 12": 14,
+        "remind me to do a b c d e": 9,
+        "weather in nineteen forty five": 12,
+        "weather forecast for istanbul": 8
+      }
+    },
+    "oracle_exec_confirm": {
+      "llm_rate": 14.3,
+      "accuracy": 91.7,
+      "acted": 1286,
+      "acted_correct": 1189,
+      "abstained": 214,
+      "silent_failures": 97,
+      "silent_inherited_a": 97,
+      "silent_oad_added_b": 0,
+      "weather_acts": 384,
+      "weather_abstain": 6,
+      "silent_unique_inputs": {
+        "weather in 1945": 11,
+        "show my calendar for 2026": 18,
+        "weather in istanbul please cancel": 14,
+        "look up contact 99problems": 18,
+        "open the 12": 14,
+        "remind me to do a b c d e": 9,
+        "weather in nineteen forty five": 12,
+        "weather forecast for istanbul": 1
+      }
+    },
+    "oracle_exec_confirm_gated_induction": {
+      "llm_rate": 18.9,
+      "accuracy": 91.7,
+      "acted": 1216,
+      "acted_correct": 1216,
+      "abstained": 284,
+      "silent_failures": 0,
+      "silent_inherited_a": 0,
+      "silent_oad_added_b": 0,
+      "weather_acts": 381,
+      "weather_abstain": 9,
+      "silent_unique_inputs": {}
+    },
+    "honest_exec_confirm": {
+      "llm_rate": 13.8,
+      "accuracy": 91.7,
+      "acted": 1293,
+      "acted_correct": 1189,
+      "abstained": 207,
+      "silent_failures": 104,
+      "silent_inherited_a": 104,
+      "silent_oad_added_b": 0,
+      "weather_acts": 384,
+      "weather_abstain": 6,
+      "silent_unique_inputs": {
+        "weather in 1945": 11,
+        "show my calendar for 2026": 18,
+        "weather in istanbul please cancel": 14,
+        "look up contact 99problems": 18,
+        "open the 12": 14,
+        "remind me to do a b c d e": 9,
+        "weather in nineteen forty five": 12,
+        "weather forecast for istanbul": 8
+      }
+    },
+    "honest_exec_confirm_gated_induction": {
+      "llm_rate": 17.5,
+      "accuracy": 91.7,
+      "acted": 1238,
+      "acted_correct": 1216,
+      "abstained": 262,
+      "silent_failures": 22,
+      "silent_inherited_a": 22,
+      "silent_oad_added_b": 0,
+      "weather_acts": 381,
+      "weather_abstain": 9,
+      "silent_unique_inputs": {
+        "remind me to do a b c d e": 9,
+        "weather in istanbul please cancel": 5,
+        "weather forecast for istanbul": 8
+      }
+    }
+  }
+}

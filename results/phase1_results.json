@@ -1,0 +1,125 @@
+{
+  "harness_reliability": 1.0,
+  "P1": {
+    "final_autonomy_pct": 86.5,
+    "acc_when_acting_pct": 100.0,
+    "silent_failures": 0,
+    "acting_bar_clean_successes": 9,
+    "family_occurrences_to_first_act": {
+      "weather": 10,
+      "calendar": 10,
+      "notes": 10,
+      "reminder": 10,
+      "contact": 10,
+      "smarthome": 10
+    },
+    "figure": "/mnt/user-data/outputs/oad_release_figs/phase1/p1_derivation_curve.png"
+  },
+  "P2": {
+    "in_domain_act_correct_pct": 100.0,
+    "in_domain_abstain_pct": 0.0,
+    "adversarial_abstain_pct": 100.0,
+    "ood_abstain_pct": 100.0,
+    "total_silent_failures": 0,
+    "adversarial_abstain_reasons": {
+      "novel_content_word": 35,
+      "no_match": 5
+    },
+    "figure": "/mnt/user-data/outputs/oad_release_figs/phase1/p2_gate_accuracy.png"
+  },
+  "P3": {
+    "promotion": {
+      "born_literal": "weather in istanbul",
+      "after_second_value": "weather in <0>",
+      "unseen_input": "weather in cairo",
+      "unseen_decision": "act",
+      "unseen_correct": true,
+      "trace": [
+        [
+          "weather in istanbul",
+          "abstain",
+          "weather in istanbul",
+          0
+        ],
+        [
+          "weather in tokyo",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in berlin",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in tokyo",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in istanbul",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in tokyo",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in istanbul",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in tokyo",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in istanbul",
+          "abstain",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in tokyo",
+          "act",
+          "weather in <0>",
+          1
+        ],
+        [
+          "weather in istanbul",
+          "act",
+          "weather in <0>",
+          1
+        ]
+      ]
+    },
+    "split": {
+      "smarthome_skeleton": "open the <0>",
+      "smarthome_slot_values": [
+        "door",
+        "garage",
+        "window"
+      ],
+      "account_folded_into_smarthome": false,
+      "boundary_spawned_separate_regularity": true,
+      "route_account_tool": "banking",
+      "route_account_correct": true,
+      "route_door_tool": "smart_home",
+      "route_door_correct": true,
+      "unseen_boundary_decision": "act",
+      "unseen_boundary_correct": false,
+      "unseen_boundary_note": "surface-identical unseen boundary -> acts and fails silently; the irreducible black-box limitation, and the motivation for white-box methods"
+    },
+    "figure": "/mnt/user-data/outputs/oad_release_figs/phase1/p3_slot_induction.png"
+  }
+}

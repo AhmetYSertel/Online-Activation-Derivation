@@ -1,0 +1,37 @@
+{
+  "E_cost": {
+    "oad": {
+      "llm_rate": 16.4,
+      "accuracy": 100.0,
+      "silent_failures": 0
+    },
+    "eager_no_gate": {
+      "llm_rate": 7.9,
+      "accuracy": 92.2,
+      "silent_failures": 471
+    },
+    "always_llm": {
+      "llm_rate": 100.0,
+      "accuracy": 100.0,
+      "silent_failures": 0
+    },
+    "junk_frac": 0.15,
+    "figure": "/mnt/user-data/outputs/oad_release_figs/phase2/e_cost_quality.png"
+  },
+  "E_drift": {
+    "drift_at": 5000,
+    "recovered_after_calls": 88,
+    "final_overall_acc": 100.0,
+    "final_weather_acc": 100.0,
+    "figure": "/mnt/user-data/outputs/oad_release_figs/phase2/e_drift_recovery.png"
+  },
+  "E_scissors": {
+    "eps": 0.6,
+    "drift_at": 5000,
+    "safe_late_gap_pct": -1.0,
+    "unsafe_late_gap_pct": 59.5,
+    "safe_weather_acts": 2997,
+    "unsafe_weather_acts": 3015,
+    "figure": "/mnt/user-data/outputs/oad_release_figs/phase2/e_scissors.png"
+  }
+}

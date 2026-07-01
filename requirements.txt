@@ -1,0 +1,12 @@
+# Core (CPU-only; the system uses no GPU and no trained model)
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.7
+
+# Optional: only needed to run the REAL GPT teacher (oad.teacher.OpenAITeacher).
+# The packaged results use the synthetic OracleTeacher and do NOT require this.
+# openai>=1.40
+
+# Phase B/C additions:
+# openai>=1.40            # real BFCL teacher (experiments_bfcl --teacher openai)
+# sentence-transformers   # semantic-cache baseline (experiments_baselines); MiniLM

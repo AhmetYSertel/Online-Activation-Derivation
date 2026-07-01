@@ -1,0 +1,143 @@
+{
+  "model": "gpt-5.5",
+  "n": 1500,
+  "junk_frac": 0.15,
+  "seed": 1,
+  "api_calls_made": 51,
+  "teacher_calibration": {
+    "n_unique": 51,
+    "teacher_accuracy": 84.3,
+    "errors_sample": [
+      {
+        "input": "look up contact 99problems",
+        "teacher": {
+          "tool": "lookup_contact",
+          "params": {
+            "name": "99problems"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "open the 12",
+        "teacher": {
+          "tool": "smart_home",
+          "params": {
+            "target": "12"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "remind me to do a b c d e",
+        "teacher": {
+          "tool": "create_reminder",
+          "params": {
+            "text": "do a b c d e"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "show my calendar for 2026",
+        "teacher": {
+          "tool": "get_calendar",
+          "params": {
+            "day": "2026"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "weather forecast for istanbul",
+        "teacher": {
+          "tool": "get_weather",
+          "params": {
+            "city": "istanbul"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "weather in 1945",
+        "teacher": {
+          "tool": "get_weather",
+          "params": {
+            "city": "1945"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "weather in istanbul please cancel",
+        "teacher": {
+          "tool": "get_weather",
+          "params": {
+            "city": "istanbul"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      },
+      {
+        "input": "weather in nineteen forty five",
+        "teacher": {
+          "tool": "get_weather",
+          "params": {
+            "city": "nineteen forty five"
+          }
+        },
+        "ground_truth": {
+          "tool": "__llm_other__",
+          "params": {}
+        }
+      }
+    ]
+  },
+  "oad": {
+    "llm_rate": 11.4,
+    "accuracy": 91.7,
+    "acted": 1329,
+    "acted_correct": 1220,
+    "silent_failures": 109,
+    "abstained": 171,
+    "abstain_wrong": 16
+  },
+  "eager_no_gate": {
+    "llm_rate": 7.9,
+    "accuracy": 91.7,
+    "acted": 1382,
+    "acted_correct": 1260,
+    "silent_failures": 122,
+    "abstained": 118,
+    "abstain_wrong": 3
+  },
+  "always_llm": {
+    "llm_rate": 100.0,
+    "accuracy": 91.7,
+    "silent_failures": 0,
+    "teacher_errors": 125
+  },
+  "wall_clock_sec": 84.0,
+  "figure": "C:\\Users\\Ahmet\\Desktop\\oad_full\\results\\figs\\real_teacher\\real_teacher_cost_quality.png"
+}
