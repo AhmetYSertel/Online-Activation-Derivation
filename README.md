@@ -26,7 +26,8 @@ python -m oad.experiments_phase1          # mechanism validity (derivation, gate
 python -m oad.experiments_phase2          # cost/coverage, drift recovery, scissors
 python -m oad.experiments_rigor           # multi-seed CIs, eps sweep, ablations, teacher noise
 ```
-Figures and metrics are written under `outputs/oad_release_figs/`.
+Figures and metrics are written under `results/` (metrics as `*_results.json`, figures
+under `results/figs/`).
 
 ## Use a real GPT model as the teacher
 The teacher is pluggable. To distill a real model instead of the oracle:
