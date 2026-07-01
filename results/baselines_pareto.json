@@ -174,5 +174,5 @@
       }
     }
   ],
-  "figure": "/home/claude/oad/oad_full/results/figs/baselines/pareto_cost_safety.png"
+  "figure": "results/figs/baselines/pareto_cost_safety.png"
 }
